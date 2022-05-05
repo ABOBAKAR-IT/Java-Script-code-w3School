@@ -8,7 +8,7 @@ All cars have the same properties, but the property values differ from car to ca
 All cars have the same methods, but the methods are performed at different times.
 
 */
-
+/*
 let car= {tupe:"fiat",midel:"500",color:"white"};
 console.log(car.color);
 
@@ -31,7 +31,7 @@ Do Not Declare Strings, Numbers, and Booleans as Objects!
 
 When a JavaScript variable is declared with the keyword "new", the variable is created as an object: 
 
-*/
+
 x = new String();        // Declares x as a String object
 y = new Number();        // Declares y as a Number object
 z = new Boolean();       // Declares z as a Boolean object 
@@ -41,3 +41,28 @@ Avoid String, Number, and Boolean objects. They complicate your code and slow do
 
 
 */
+
+
+//**************  Accessing Object Properties with Dot Notation ***********/
+
+const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+
+console.log(testObj.hat)
+
+/**************************Accessing Object Properties with Bracket Notation */
+console.log(testObj["shirt"])
+
+/**************Accessing Object Properties with Variables */
+
+let name="hat";
+console.log(testObj[name]);
+
+
+/*******************Updating Object Properties */
+
+testObj.hat="Rana"
+console.log(testObj);
