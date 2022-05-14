@@ -26,7 +26,7 @@ let data=[
 ]
 
 //console.log(data);
-data[0].status="submitted"
+data[0].status="submitted"//  status not exit in array of object but now add status element in array of object...
 //let status="submitted"
 
 console.log(data);
