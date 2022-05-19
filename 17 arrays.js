@@ -52,7 +52,7 @@ let xx=cars[0];
 console.log(xx);//rana
 
 /*
-****************Access the Full Array*****************
+//****************Access the Full Array*****************
 
 With JavaScript, the full array can be accessed by referring to the array name:
 */
@@ -60,7 +60,7 @@ console.log(cars);
 
 
 /*
-*****************Arrays are Objects***************
+//*****************Arrays are Objects***************
 
 Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays.
 
@@ -70,7 +70,7 @@ Arrays use numbers to access its "elements". In this example, person[0] returns 
 */
 /*
 
-******************The length Property*****************
+//******************The length Property*****************
 
 The length property of an array returns the length of an array (the number of array elements).
 */
@@ -99,7 +99,7 @@ function show(value,index) {
 
 
 /*
-********************Adding Array Elements*************************
+//********************Adding Array Elements*************************
 
 The easiest way to add a new element to an array is using the push() method:
 */
@@ -161,21 +161,21 @@ person1[0];         // Will return undefined
 
 
 /*
-**********The Difference Between Arrays and Objects*************
+//**********The Difference Between Arrays and Objects*************
 
 In JavaScript, arrays use numbered indexes.  
 In JavaScript, objects use named indexes.
 Arrays are a special kind of objects, with numbered indexes.
 
 
-************When to Use Arrays. When to use Objects.**********
+//************When to Use Arrays. When to use Objects.**********
 
     JavaScript does not support associative arrays.
     You should use objects when you want the element names to be strings (text).
     You should use arrays when you want the element names to be numbers.
 
 
-**********************Avoid new Array()*************
+//**********************Avoid new Array()*************
 
 There is no need to use the JavaScript's built-in array constructor new Array().
 
@@ -191,7 +191,7 @@ const points2 = [];              // Good
 
 
 /*
-*********************How to Recognize an Array************************
+//*********************How to Recognize an Array************************
 
 A common question is: How do I know if a variable is an array?
 The problem is that the JavaScript operator typeof returns "object":
@@ -223,3 +223,18 @@ function show(value) {
 cars.forEach(element => {
   console.log(element)  
 });
+
+
+
+//**** */ Array Destructuring in ES6
+
+
+// The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+// ES6 has added a shorthand syntax for destructuring an array.
+
+// The following example demonstrates how to unpack the elements of an array into distinct variables:
+
+let arr=[1,2,3,4]
+
+let [one,two,three]=arr;
+console.log(one,two,three);
