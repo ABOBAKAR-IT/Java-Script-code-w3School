@@ -142,5 +142,21 @@ myObj.hasOwnProperty("top");
 myObj.hasOwnProperty("middle");
 
 
-///////The first hasOwnProperty returns true, while the second returns false.
+//The first hasOwnProperty returns true, while the second returns false
 
+// *TODO: Object Destructuring in ES6
+
+
+// Similar to Array destructuring, Object destructuring unpacks properties into distinct variables.
+// For example:
+let obj={h:100,s:true}
+let {h,s}=obj;//Use same name of property of object
+console.log(h);
+console.log(s);
+let {a,b}=obj;//get error .
+
+// *You can also assign the object to new variable names.
+// For example:
+let obj1={a:1000,b:false}
+let {a:C,b:D}=obj1;
+console.log(C,D);
