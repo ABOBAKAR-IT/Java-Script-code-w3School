@@ -160,3 +160,12 @@ let {a,b}=obj;//get error .
 let obj1={a:1000,b:false}
 let {a:C,b:D}=obj1;
 console.log(C,D);
+
+
+// Finally you can assign default values to variables, in case the value unpacked 
+// from the object is undefined.
+// For example:
+
+let obj2={W:1000,R:false}
+let {Q=10,W=12,R=true}=obj2;
+console.log(Q,W,R);
